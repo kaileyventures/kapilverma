@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Kapil Verma | Elite Canadian Real Estate</title>
+    <title>Kapil Verma | Luxury Canadian Real Estate</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme luxury-vibe">
 
     <div class="ambient-bg"></div>
 
@@ -27,10 +27,10 @@
                 <a href="mailto:contact@kapilverma.com" class="btn outline-btn desktop-only">Work With Me</a>
                 
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Light/Dark Theme">
-                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
                 </button>
@@ -62,17 +62,24 @@
         <div class="hero-glow glow-1"></div>
         <div class="hero-glow glow-2"></div>
         
+        <div class="arch-lines">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0,100 L50,0 L100,100" stroke="var(--gold-accent)" stroke-width="0.2" fill="none" opacity="0.3" class="line-anim-1" />
+                <path d="M20,100 L60,20 L100,100" stroke="var(--gold-accent)" stroke-width="0.1" fill="none" opacity="0.2" class="line-anim-2" />
+            </svg>
+        </div>
+
         <div class="container relative">
             <div class="hero-content reveal">
                 <div class="hero-badge">
-                    <span class="pulse-dot"></span> Top 1% Canadian Brokerage
+                    <span class="pulse-dot"></span> Top Tier Canadian Brokerage
                 </div>
-                <h1 class="hero-title">Redefining <br><span class="highlight">Luxury Living</span></h1>
-                <p class="hero-subtitle">Data-driven strategies for high-net-worth individuals. Buy, sell, and invest in Canada's premium markets with absolute precision and discretion.</p>
+                <h1 class="hero-title luxe-typography">Elevating <br><span class="highlight">Luxury Estates</span></h1>
+                <p class="hero-subtitle">Bespoke real estate acquisitions for high-net-worth individuals. Navigate Canada's most exclusive markets with absolute discretion and precision.</p>
                 
                 <div class="hero-actions">
-                    <a href="#properties" class="btn solid-btn">Explore Portfolio</a>
-                    <a href="#contact" class="btn outline-btn">Request Consultation &rarr;</a>
+                    <a href="#properties" class="btn solid-btn">View Portfolio</a>
+                    <a href="#contact" class="btn outline-btn">Private Consultation &rarr;</a>
                 </div>
             </div>
         </div>
@@ -82,16 +89,16 @@
         <div class="container reveal">
             <div class="stats-grid glass-panel">
                 <div class="stat-item">
-                    <h2>$50M+</h2>
-                    <p>Sales Volume</p>
+                    <h2 class="luxe-typography">$150M+</h2>
+                    <p>Assets Managed</p>
                 </div>
                 <div class="stat-item">
-                    <h2>120+</h2>
-                    <p>Families Relocated</p>
+                    <h2 class="luxe-typography">Exclusive</h2>
+                    <p>Client Network</p>
                 </div>
                 <div class="stat-item">
-                    <h2>5.0★</h2>
-                    <p>Client Rating</p>
+                    <h2 class="luxe-typography">Top 1%</h2>
+                    <p>Global Distinction</p>
                 </div>
             </div>
         </div>
@@ -100,28 +107,26 @@
     <section id="properties" class="properties">
         <div class="container">
             <div class="section-header reveal">
-                <h2>Exclusive Listings</h2>
-                <p>Curated assets across prime Canadian neighborhoods.</p>
+                <h2 class="luxe-typography">The Collection</h2>
+                <p>Curated architectural masterpieces across Canada.</p>
             </div>
             
             <div class="property-grid">
                 <article class="property-card glass-panel tilt-card reveal">
                     <div class="card-img">
-                        <span class="badge">Just Listed</span>
-                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Toronto Home" loading="lazy">
+                        <span class="badge">Listed</span>
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Toronto Estate" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="price-row">
-                            <h3>$1,250,000 CAD</h3>
+                            <h3 class="luxe-typography">$5,250,000 CAD</h3>
                             <span class="city-tag">Toronto</span>
                         </div>
-                        <p class="location">142 Maplewood Ave, ON</p>
+                        <p class="location">Bridle Path, ON</p>
                         <div class="meta">
-                            <span>4 Beds</span>
-                            <span class="divider">•</span>
-                            <span>3 Baths</span>
-                            <span class="divider">•</span>
-                            <span>2,800 Sq.Ft.</span>
+                            <span>6 Beds</span><span class="divider">|</span>
+                            <span>8 Baths</span><span class="divider">|</span>
+                            <span>9,500 Sq.Ft.</span>
                         </div>
                     </div>
                 </article>
@@ -133,16 +138,14 @@
                     </div>
                     <div class="card-content">
                         <div class="price-row">
-                            <h3>$2,100,000 CAD</h3>
+                            <h3 class="luxe-typography">$8,100,000 CAD</h3>
                             <span class="city-tag">Vancouver</span>
                         </div>
-                        <p class="location">88 Harbor View Dr, BC</p>
+                        <p class="location">Point Grey Road, BC</p>
                         <div class="meta">
-                            <span>5 Beds</span>
-                            <span class="divider">•</span>
-                            <span>4.5 Baths</span>
-                            <span class="divider">•</span>
-                            <span>4,200 Sq.Ft.</span>
+                            <span>5 Beds</span><span class="divider">|</span>
+                            <span>6 Baths</span><span class="divider">|</span>
+                            <span>7,200 Sq.Ft.</span>
                         </div>
                     </div>
                 </article>
@@ -153,16 +156,70 @@
                     </div>
                     <div class="card-content">
                         <div class="price-row">
-                            <h3>$850,000 CAD</h3>
+                            <h3 class="luxe-typography">$3,850,000 CAD</h3>
                             <span class="city-tag">Toronto</span>
                         </div>
-                        <p class="location">300 Front St W, ON</p>
+                        <p class="location">Yorkville Penthouse, ON</p>
                         <div class="meta">
-                            <span>2 Beds</span>
-                            <span class="divider">•</span>
-                            <span>2 Baths</span>
-                            <span class="divider">•</span>
-                            <span>1,100 Sq.Ft.</span>
+                            <span>3 Beds</span><span class="divider">|</span>
+                            <span>4 Baths</span><span class="divider">|</span>
+                            <span>4,100 Sq.Ft.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="property-card glass-panel tilt-card reveal">
+                    <div class="card-img">
+                        <span class="badge">Just Listed</span>
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80" alt="Montreal Architecture" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="price-row">
+                            <h3 class="luxe-typography">$4,150,000 CAD</h3>
+                            <span class="city-tag">Montreal</span>
+                        </div>
+                        <p class="location">Westmount Heights, QC</p>
+                        <div class="meta">
+                            <span>5 Beds</span><span class="divider">|</span>
+                            <span>5 Baths</span><span class="divider">|</span>
+                            <span>5,800 Sq.Ft.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="property-card glass-panel tilt-card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Calgary Estate" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="price-row">
+                            <h3 class="luxe-typography">$2,900,000 CAD</h3>
+                            <span class="city-tag">Calgary</span>
+                        </div>
+                        <p class="location">Mount Royal, AB</p>
+                        <div class="meta">
+                            <span>4 Beds</span><span class="divider">|</span>
+                            <span>4.5 Baths</span><span class="divider">|</span>
+                            <span>4,500 Sq.Ft.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="property-card glass-panel tilt-card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-img">
+                        <span class="badge pending">Reserved</span>
+                        <img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80" alt="Muskoka Lakehouse" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="price-row">
+                            <h3 class="luxe-typography">$6,500,000 CAD</h3>
+                            <span class="city-tag">Muskoka</span>
+                        </div>
+                        <p class="location">Lake Rosseau Waterfront, ON</p>
+                        <div class="meta">
+                            <span>7 Beds</span><span class="divider">|</span>
+                            <span>6 Baths</span><span class="divider">|</span>
+                            <span>8,200 Sq.Ft.</span>
                         </div>
                     </div>
                 </article>
@@ -174,25 +231,25 @@
         <div class="container reveal">
             <div class="contact-wrapper glass-panel">
                 <div class="contact-info">
-                    <h2>Execute Strategy</h2>
-                    <p>Discretion and precision are mandatory. Drop your investment parameters below to initiate a private consultation.</p>
+                    <h2 class="luxe-typography">Confidential Inquiry</h2>
+                    <p>Engage in a private dialogue regarding your asset acquisition strategy or portfolio liquidation.</p>
                     <div class="direct-contact">
-                        <span class="label">Direct Channel</span>
+                        <span class="label">Executive Desk</span>
                         <a href="mailto:contact@kapilverma.com" class="email-link">contact@kapilverma.com</a>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form id="leadForm">
                         <div class="input-group">
-                            <input type="text" id="name" class="glass-input" placeholder="Full Name" required autocomplete="name">
+                            <input type="text" id="name" class="glass-input" placeholder="Legal Name" required autocomplete="name">
                         </div>
                         <div class="input-group">
-                            <input type="email" id="email" class="glass-input" placeholder="Email Address" required autocomplete="email" inputmode="email">
+                            <input type="email" id="email" class="glass-input" placeholder="Primary Email" required autocomplete="email" inputmode="email">
                         </div>
                         <div class="input-group">
-                            <textarea id="message" class="glass-input" rows="4" placeholder="Investment Parameters / Requirements" required></textarea>
+                            <textarea id="message" class="glass-input" rows="4" placeholder="Brief details of your requirement..." required></textarea>
                         </div>
-                        <button type="submit" class="btn solid-btn full-width">Transmit Request</button>
+                        <button type="submit" class="btn solid-btn full-width">Submit Inquiry</button>
                     </form>
                 </div>
             </div>
@@ -202,7 +259,7 @@
     <footer class="glass-footer">
         <div class="container">
             <div class="footer-logo">KAPIL VERMA</div>
-            <p>&copy; 2026 Kapil Verma Real Estate. All parameters set.</p>
+            <p>&copy; 2026 Kapil Verma | Premium Canadian Brokerage.</p>
         </div>
     </footer>
 
