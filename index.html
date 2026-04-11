@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapil Verma | Premium Canadian Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Kapil Verma | Elite Canadian Real Estate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,133 +15,186 @@
 
     <nav class="glass-nav">
         <div class="nav-container">
-            <a href="#" class="logo">KAPIL VERMA</span></a>
-            <div class="nav-links">
-                <a href="#properties">Properties</a>
-                <a href="#about">About</a>
+            <a href="#" class="logo">KAPIL VERMA</a>
+            
+            <div class="nav-links desktop-only">
+                <a href="#properties">Portfolio</a>
+                <a href="#expertise">Expertise</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="mailto:contact@kapilverma.com" class="btn outline-btn">Work With Me</a>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
+
+            <div class="nav-actions">
+                <a href="mailto:contact@kapilverma.com" class="btn outline-btn desktop-only">Work With Me</a>
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Light/Dark Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <div class="mobile-menu glass-panel">
-        <a href="#properties" class="mobile-link">Properties</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <div class="mobile-nav-links">
+                <a href="#properties" class="mobile-link">Portfolio</a>
+                <a href="#expertise" class="mobile-link">Expertise</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+                <a href="mailto:contact@kapilverma.com" class="btn solid-btn mt-custom">Work With Me</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <span class="label">Direct Access</span>
+                <a href="mailto:contact@kapilverma.com" class="email-link">contact@kapilverma.com</a>
+            </div>
+        </div>
     </div>
 
     <section class="hero">
-        <div class="container hero-content reveal">
-            <div class="hero-text glass-panel">
-                <h1>Precision in <br><span class="highlight">Canadian Luxury</span></h1>
-                <p>Data-driven real estate strategies. Buy, sell, and invest in Canada's premium neighborhoods with absolute confidence.</p>
-                <div class="hero-actions">
-                    <a href="#properties" class="btn solid-btn">View Portfolio</a>
-                    <a href="#contact" class="btn outline-btn">Start Search &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats container reveal">
-        <div class="stats-grid glass-panel">
-            <div class="stat-item">
-                <h2>$50M+</h2>
-                <p>Sales Volume</p>
-            </div>
-            <div class="stat-item">
-                <h2>120+</h2>
-                <p>Families Helped</p>
-            </div>
-            <div class="stat-item">
-                <h2>5.0★</h2>
-                <p>Client Rating</p>
-            </div>
-            <div class="stat-item">
-                <h2>Top 1%</h2>
-                <p>Canadian Realtors</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="properties" class="properties container">
-        <div class="section-header reveal">
-            <h2>Exclusive Listings</h2>
-            <p>Curated properties across prime Canadian markets.</p>
-        </div>
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
         
-        <div class="property-grid">
-            <div class="property-card glass-panel tilt-card reveal">
-                <div class="card-img">
-                    <span class="badge">Just Listed</span>
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Toronto Home">
+        <div class="container relative">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Top 1% Canadian Brokerage
                 </div>
-                <div class="card-content">
-                    <h3>$1,250,000 CAD</h3>
-                    <p class="location">142 Maplewood Ave, Toronto</p>
-                    <div class="meta">
-                        <span>4 Beds</span>
-                        <span>3 Baths</span>
-                        <span>2,800 Sq.Ft.</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card glass-panel tilt-card reveal" style="transition-delay: 0.1s;">
-                <div class="card-img">
-                    <span class="badge pending">Pending</span>
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Vancouver Villa">
-                </div>
-                <div class="card-content">
-                    <h3>$2,100,000 CAD</h3>
-                    <p class="location">88 Harbor View Dr, Vancouver</p>
-                    <div class="meta">
-                        <span>5 Beds</span>
-                        <span>4.5 Baths</span>
-                        <span>4,200 Sq.Ft.</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card glass-panel tilt-card reveal" style="transition-delay: 0.2s;">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Downtown Condo">
-                </div>
-                <div class="card-content">
-                    <h3>$850,000 CAD</h3>
-                    <p class="location">300 Front St W, Toronto</p>
-                    <div class="meta">
-                        <span>2 Beds</span>
-                        <span>2 Baths</span>
-                        <span>1,100 Sq.Ft.</span>
-                    </div>
+                <h1 class="hero-title">Redefining <br><span class="highlight">Luxury Living</span></h1>
+                <p class="hero-subtitle">Data-driven strategies for high-net-worth individuals. Buy, sell, and invest in Canada's premium markets with absolute precision and discretion.</p>
+                
+                <div class="hero-actions">
+                    <a href="#properties" class="btn solid-btn">Explore Portfolio</a>
+                    <a href="#contact" class="btn outline-btn">Request Consultation &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact container reveal">
-        <div class="contact-wrapper glass-panel">
-            <div class="contact-info">
-                <h2>Execute Your Strategy</h2>
-                <p>Precision execution is mandatory in today's market. Drop your requirements below to initiate contact.</p>
-                <div class="direct-contact">
-                    <span class="label">Direct Email</span>
-                    <strong>contact@kapilverma.com</strong>
+    <section id="expertise" class="stats">
+        <div class="container reveal">
+            <div class="stats-grid glass-panel">
+                <div class="stat-item">
+                    <h2>$50M+</h2>
+                    <p>Sales Volume</p>
+                </div>
+                <div class="stat-item">
+                    <h2>120+</h2>
+                    <p>Families Relocated</p>
+                </div>
+                <div class="stat-item">
+                    <h2>5.0★</h2>
+                    <p>Client Rating</p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="leadForm">
-                    <input type="text" class="glass-input" placeholder="Full Name" required>
-                    <input type="email" class="glass-input" placeholder="Email Address" required>
-                    <textarea class="glass-input" rows="4" placeholder="Investment Parameters / Requirements" required></textarea>
-                    <button type="submit" class="btn solid-btn full-width">Transmit Request</button>
-                </form>
+        </div>
+    </section>
+
+    <section id="properties" class="properties">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Exclusive Listings</h2>
+                <p>Curated assets across prime Canadian neighborhoods.</p>
+            </div>
+            
+            <div class="property-grid">
+                <article class="property-card glass-panel tilt-card reveal">
+                    <div class="card-img">
+                        <span class="badge">Just Listed</span>
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Toronto Home" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="price-row">
+                            <h3>$1,250,000 CAD</h3>
+                            <span class="city-tag">Toronto</span>
+                        </div>
+                        <p class="location">142 Maplewood Ave, ON</p>
+                        <div class="meta">
+                            <span>4 Beds</span>
+                            <span class="divider">•</span>
+                            <span>3 Baths</span>
+                            <span class="divider">•</span>
+                            <span>2,800 Sq.Ft.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="property-card glass-panel tilt-card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-img">
+                        <span class="badge pending">Pending</span>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Vancouver Villa" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="price-row">
+                            <h3>$2,100,000 CAD</h3>
+                            <span class="city-tag">Vancouver</span>
+                        </div>
+                        <p class="location">88 Harbor View Dr, BC</p>
+                        <div class="meta">
+                            <span>5 Beds</span>
+                            <span class="divider">•</span>
+                            <span>4.5 Baths</span>
+                            <span class="divider">•</span>
+                            <span>4,200 Sq.Ft.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="property-card glass-panel tilt-card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Downtown Condo" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="price-row">
+                            <h3>$850,000 CAD</h3>
+                            <span class="city-tag">Toronto</span>
+                        </div>
+                        <p class="location">300 Front St W, ON</p>
+                        <div class="meta">
+                            <span>2 Beds</span>
+                            <span class="divider">•</span>
+                            <span>2 Baths</span>
+                            <span class="divider">•</span>
+                            <span>1,100 Sq.Ft.</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container reveal">
+            <div class="contact-wrapper glass-panel">
+                <div class="contact-info">
+                    <h2>Execute Strategy</h2>
+                    <p>Discretion and precision are mandatory. Drop your investment parameters below to initiate a private consultation.</p>
+                    <div class="direct-contact">
+                        <span class="label">Direct Channel</span>
+                        <a href="mailto:contact@kapilverma.com" class="email-link">contact@kapilverma.com</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="leadForm">
+                        <div class="input-group">
+                            <input type="text" id="name" class="glass-input" placeholder="Full Name" required autocomplete="name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" class="glass-input" placeholder="Email Address" required autocomplete="email" inputmode="email">
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" class="glass-input" rows="4" placeholder="Investment Parameters / Requirements" required></textarea>
+                        </div>
+                        <button type="submit" class="btn solid-btn full-width">Transmit Request</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
